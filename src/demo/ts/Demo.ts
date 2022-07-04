@@ -8,6 +8,6 @@ Plugin();
 
 tinymce.init({
   selector: 'textarea.tinymce',
-  plugins: 'code export-word',
-  toolbar: 'export-word'
+  plugins: 'code exportword',
+  toolbar: 'exportword'
 });

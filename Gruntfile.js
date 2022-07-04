@@ -79,11 +79,11 @@ module.exports = (grunt) => {
         },
         // scratchPluginMinPath is used twice on purpose, all outputs will be minified for premium plugins
         files: {
-          'dist/export-word/plugin.js': [
+          'dist/exportword/plugin.js': [
             'src/text/license-header.js',
             scratchPluginMinPath
           ],
-          'dist/export-word/plugin.min.js': [
+          'dist/exportword/plugin.min.js': [
             'src/text/license-header.js',
             scratchPluginMinPath
           ]
@@ -94,7 +94,7 @@ module.exports = (grunt) => {
     copy: {
       css: {
         files: [
-          { src: [ 'CHANGELOG.txt', 'LICENSE.txt' ], dest: 'dist/export-word', expand: true }
+          { src: [ 'CHANGELOG.txt', 'LICENSE.txt' ], dest: 'dist/exportword', expand: true }
         ]
       }
     },
@@ -148,7 +148,7 @@ module.exports = (grunt) => {
   grunt.loadNpmTasks('@ephox/swag');
 
   grunt.registerTask('version', 'Creates a version file', () => {
-    grunt.file.write('dist/export-word/version.txt', BUILD_VERSION);
+    grunt.file.write('dist/exportword/version.txt', BUILD_VERSION);
   });
 
   grunt.registerTask('default', [

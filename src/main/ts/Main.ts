@@ -5,5 +5,5 @@ Plugin();
 /** *****
  * DO NOT EXPORT ANYTHING
  *
- * IF YOU DO ROLLUP WILL LEAVE A `export-word` GLOBAL ON THE PAGE
+ * IF YOU DO ROLLUP WILL LEAVE A `exportword` GLOBAL ON THE PAGE
  *******/

@@ -1,7 +1,7 @@
 {
-  "name": "export-word",
+  "name": "exportword",
   "version": "1.0.0",
-  "description": "export-word",
+  "description": "exportword",
   "scripts": {
     "prepublishOnly": "yarn lint && yarn build",
     "lint": "eslint src/**/*.ts",

@@ -5,13 +5,13 @@ import Plugin from '../../../main/ts/Plugin';
 // This an example of a browser test of the editor.
 describe('browser.PluginTest', () => {
   const hook = TinyHooks.bddSetup({
-    plugins: 'export-word',
-    toolbar: 'export-word'
+    plugins: 'exportword',
+    toolbar: 'exportword'
   }, [ Plugin ]);
 
   it('test click on button', () => {
     const editor = hook.editor();
-    TinyUiActions.clickOnToolbar(editor, 'button:contains("export-word button")');
-    TinyAssertions.assertContent(editor, '<p>content added from export-word</p>');
+    TinyUiActions.clickOnToolbar(editor, 'button:contains("exportword button")');
+    TinyAssertions.assertContent(editor, '<p>content added from exportword</p>');
   });
 });
